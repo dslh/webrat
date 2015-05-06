@@ -127,10 +127,10 @@ For example:
       @http_method  = http_method
       @data         = data
 
-      if internal_redirect?
-        check_for_infinite_redirects
-        request_page(response_location, :get, {})
-      end
+#      if internal_redirect?
+#        check_for_infinite_redirects
+#        request_page(response_location, :get, {})
+#      end
 
       return response
     end
