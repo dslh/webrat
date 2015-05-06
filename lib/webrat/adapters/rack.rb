@@ -5,7 +5,7 @@ module Webrat
     extend Forwardable
 
     attr :session
-    def_delegators :@session, :get, :post, :put, :delete
+    def_delegators :@session, :get, :post, :put, :delete, :patch
 
     def initialize(session) #:nodoc:
       @session = session
