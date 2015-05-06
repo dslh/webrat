@@ -67,7 +67,7 @@ For example:
 
     def_delegators :@adapter, :response, :response_code, :response_body, :response_headers,
       :response_body=, :response_code=,
-      :get, :post, :put, :delete
+      :get, :post, :put, :delete, :patch
 
     def initialize(adapter = nil)
       @adapter         = adapter
